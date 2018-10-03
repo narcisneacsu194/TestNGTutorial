@@ -8,6 +8,11 @@
     <artifactId>TestNGTutorial</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <selenium.version>3.13.0</selenium.version>
+        <selenium.scope>test</selenium.scope>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
@@ -20,5 +25,44 @@
             <artifactId>jcommander</artifactId>
             <version>1.69</version>
         </dependency>
+
+
+        <!-- Selenium dependencies -->
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+            <scope>${selenium.scope}</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-server</artifactId>
+            <version>${selenium.version}</version>
+            <scope>${selenium.scope}</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-api</artifactId>
+            <version>${selenium.version}</version>
+            <scope>${selenium.scope}</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-support</artifactId>
+            <version>${selenium.version}</version>
+            <scope>${selenium.scope}</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-remote-driver</artifactId>
+            <version>${selenium.version}</version>
+            <scope>${selenium.scope}</scope>
+        </dependency>
+
     </dependencies>
 </project>
